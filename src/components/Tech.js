@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import styles from './comp.module.css'
 import Rightbar from './Rightbar';
+import { Link} from "react-router-dom";
 
 const Over = [
   {
@@ -10,7 +11,7 @@ const Over = [
     Position: "Tech",
     Facebook: "https://www.facebook.com/nitishk1005",
     LinkedIn: "https://www.linkedin.com/in/nitish-bpns",
-    Email: "nitishkumar1.iitkgp@gmail.com",
+    Email: 'mailto:nitishkumar1.iitkgp@gmail.com',
     Phone: "+919507816000"
 },
 {
@@ -19,7 +20,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php?id=100048948850858",
     LinkedIn: "https://www.linkedin.com/in/shivam-dwivedi-764006217/",
-    Email: "shivamkval@gmail.com",
+    Email: "mailto:shivamkval@gmail.com",
     Phone: "+919044162170"
 },
 ];
@@ -36,10 +37,13 @@ function Tech() {
     </div>
   
     <div className={styles.over}>
-  
-    <img src='./images/left.svg' alt='left' className={styles.left}/>
-    <img src='./images/right.svg' alt='left' className={styles.right}/>
-  
+        <Link to='/'>
+        <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
+        <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
+
     <div className={styles.mhead}>
           <center>Tech Coordinators</center>
         </div>
@@ -54,7 +58,7 @@ function Tech() {
 
               <div className={styles.links}>
                 <div className={styles.link1}>
-                  <a href={member.Email} target="blank">
+                  <a href={member.Email} target='blank'>
                     <img
                       src="./images/mail.svg"
                       className={styles.mail}
@@ -62,7 +66,7 @@ function Tech() {
                     />
                   </a>
                 </div>
-                <div className={styles.link1} target="blank">
+                <div className={styles.link1} target='blank'>
                   <a href={member.Facebook}>
                     <img
                       src="./images/fb.svg"
@@ -71,7 +75,7 @@ function Tech() {
                     />
                   </a>
                 </div>
-                <div className={styles.link1} target="blank">
+                <div className={styles.link1} target='blank'>
                   <a href={member.LinkedIn}>
                     <img src="./images/li.svg" className={styles.li} alt="LI" />
                   </a>

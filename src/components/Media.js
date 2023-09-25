@@ -2,6 +2,8 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import styles from './comp.module.css'
 import Rightbar from './Rightbar';
+import { Link} from "react-router-dom";
+
 
 const Over = [
   {
@@ -10,7 +12,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php?id=100059180424213",
     LinkedIn: "https://www.linkedin.com/in/nidhi-goyal-iitkgp",
-    Email: "nidhigoyal1310@gmail.com",
+    Email: "mailto:nidhigoyal1310@gmail.com",
     Phone: "+919319142576"
 },
 {
@@ -19,7 +21,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/shreyas.anilal/",
     LinkedIn: "https://www.linkedin.com/in/shreyas-anilal-883166179/",
-    Email: "shreyas2.0sv@gmail.com",
+    Email: "mailto:shreyas2.0sv@gmail.com",
     Phone: "+917219284505"
 }
 ];
@@ -28,6 +30,7 @@ const Over = [
 function Media() {
   return (
     <>
+
  <div className={styles.sbar} >
     <Sidebar />
     </div>
@@ -38,9 +41,13 @@ function Media() {
 
     <div className={styles.over}>
   
-    <img src='./images/left.svg' alt='left' className={styles.left}/>
-    <img src='./images/right.svg' alt='left' className={styles.right}/>
-  
+      <Link to='/'>
+        <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
+        <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
+
     <div className={styles.mhead}>
           <center>Media</center>
         </div>

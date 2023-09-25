@@ -18,10 +18,10 @@
   /* color: red; */
   position: absolute;
   top: 28%;
-  left: 40rem;
+  left: 35%;
   display: flex;
   flex-wrap: wrap;
-  width: 62rem;
+  width: 68%;
   place-content: center;
 }
 .pcard {
@@ -48,7 +48,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 24%;
-  margin: -29% 0 0 24%;
+  margin: -29% 0 0 22%;
   position: absolute;
 }
 .links {

@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import styles from "./comp.module.css";
 import Rightbar from "./Rightbar";
+import { Link} from "react-router-dom";
 
 const Over = [
   {
@@ -10,7 +11,7 @@ const Over = [
     Position: "Dance + Lifestyle Coordinator",
     Facebook: "https://m.facebook.com/profile.php/?id=100006483914831",
     LinkedIn: "https://www.linkedin.com/in/aryan-rane-22a8241b9",
-    Email: "aryanrane1000@gmail.com",
+    Email: "mailto:aryanrane1000@gmail.com",
     Phone: "+919112817950",
   },
   {
@@ -19,7 +20,7 @@ const Over = [
     Position: "Dramatics Coordinator",
     Facebook: "https://www.facebook.com/Mallickzaid7",
     LinkedIn: "https://www.linkedin.com/in/md-zaid-alam-a99874217",
-    Email: "Mallickzaid7@gmail.com",
+    Email: "mailto:Mallickzaid7@gmail.com",
     Phone: "+919508551256",
   },
   {
@@ -28,7 +29,7 @@ const Over = [
     Position: "Music Coordinator",
     Facebook: "https://www.facebook.com/nithish.nani.50?mibextid=9R9pXO",
     LinkedIn: "https://www.linkedin.com/in/burra-nithish-78279a230",
-    Email: "nithishnani.277@gmail.com",
+    Email: "mailto:nithishnani.277@gmail.com",
     Phone: "+919885989222",
   },
   {
@@ -38,7 +39,7 @@ const Over = [
     Facebook:
       "https://www.facebook.com/profile.php?id=100062647992139&mibextid=ZbWKwL",
     LinkedIn: "https://www.linkedin.com/in/jai-kumar-soni-64b21a211",
-    Email: "sonij7767@gmail.com",
+    Email: "mailto:sonij7767@gmail.com",
     Phone: "+919001927934",
   },
   {
@@ -47,7 +48,7 @@ const Over = [
     Position: "Quiz Coordinator",
     Facebook: "https://www.facebook.com/heavymetal17/",
     LinkedIn: "https://www.linkedin.com/in/sanchay17/",
-    Email: "15sanchay@gmail.com",
+    Email: "mailto:15sanchay@gmail.com",
     Phone: "+919479087949",
   },
   {
@@ -56,7 +57,7 @@ const Over = [
     Position: "Film + Photography Coordinator",
     Facebook: "https://www.facebook.com/Harishwar.Adithya.S?mibextid=ZbWKwL",
     LinkedIn: "https://www.linkedin.com/in/harishwar-adithya-s-5499b922a",
-    Email: "harishwar017@gmail.com",
+    Email: "mailto:harishwar017@gmail.com",
     Phone: "+917200132555",
   },
 ];
@@ -73,8 +74,12 @@ function Events() {
       </div>
 
       <div className={styles.over}>
+        <Link to='/'>
         <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
         <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
 
         <div className={styles.mhead}>
           <center>Events</center>

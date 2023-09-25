@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import styles from './comp.module.css'
 import Rightbar from './Rightbar';
+import { Link} from "react-router-dom";
 
 const Over = [
   {
@@ -10,7 +11,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php/?id=100003497188793",
     LinkedIn: "https://www.linkedin.com/in/zeeshan-khan-05a25211b",
-    Email: "zeeshankhan.iitkgp@gmail.com",
+    Email: "mailto:zeeshankhan.iitkgp@gmail.com",
     Phone: "+919770583095"
 },
 {
@@ -19,7 +20,7 @@ const Over = [
     Position: "Outreach and Hospitality Coordinator ",
     Facebook: "https://www.facebook.com/rishitha.marlapati?mibextid=ZbWKwL",
     LinkedIn: "https://www.linkedin.com/in/rishitha-marlapati-a7096521b",
-    Email: "marlapatirishitha@gmail.com",
+    Email: "mailto:marlapatirishitha@gmail.com",
     Phone: "+918850412529"
 },
 {
@@ -28,7 +29,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/sarathgarimella17/",
     LinkedIn: "https://www.linkedin.com/in/saisarathgarimella/",
-    Email: "saisarath857@gmail.com",
+    Email: "mailto:saisarath857@gmail.com",
     Phone: "+919618790643"
 }
 ];
@@ -46,10 +47,13 @@ function Outreach() {
     </div>
 
     <div className={styles.over}>
-  
-    <img src='./images/left.svg' alt='left' className={styles.left}/>
-    <img src='./images/right.svg' alt='left' className={styles.right}/>
-  
+        <Link to='/'>
+        <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
+        <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
+
     <div className={styles.mhead}>
           <center>Outreach</center>
         </div>

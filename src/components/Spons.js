@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import styles from './comp.module.css'
 import Rightbar from './Rightbar';
+import { Link} from "react-router-dom";
 
 const Over = [
   {
@@ -10,7 +11,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php?id=100006118908643",
     LinkedIn: "https://www.linkedin.com/in/rishi-kumar-01a752221/",
-    Email: "kumarrishi.iitkgp@gmail.com",
+    Email: "mailto:kumarrishi.iitkgp@gmail.com",
     Phone: "+918084927363"
 },
 {
@@ -19,7 +20,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php?id=100056865170803",
     LinkedIn: "https://www.linkedin.com/in/nikhil-goyal-612700205/",
-    Email: "nikhilgoyal.iitkgp@gmail.com",
+    Email: "mailto:nikhilgoyal.iitkgp@gmail.com",
     Phone: "+919855342222"
 },
 {
@@ -28,7 +29,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php?id=100007226146644&mibextid=LQQJ4d",
     LinkedIn: "http://linkedin.com/in/awanish-kumar-413781205",
-    Email: "Awanish.iitkgp@gmail.com",
+    Email: "mailto:Awanish.iitkgp@gmail.com",
     Phone: "+919351114364"
 }
 ]
@@ -44,10 +45,13 @@ function Spons() {
     </div>
 
     <div className={styles.over}>
-  
-    <img src='./images/left.svg' alt='left' className={styles.left}/>
-    <img src='./images/right.svg' alt='left' className={styles.right}/>
-  
+        <Link to='/'>
+        <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
+        <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
+
     <div className={styles.mhead}>
           <center>Sponsorship</center>
         </div>

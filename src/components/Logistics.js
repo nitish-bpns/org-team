@@ -2,6 +2,8 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import styles from './comp.module.css'
 import Rightbar from './Rightbar';
+import { Link} from "react-router-dom";
+
 
 const Over = [
   {
@@ -10,7 +12,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/ishan.nargolkar.3",
     LinkedIn: "www.linkedin.com/in/ishan-nargolkar",
-    Email: "ishan.nargolkar@gmail.com",
+    Email: "mailto:ishan.nargolkar@gmail.com",
     Phone: "+917261970250"
 },
 {
@@ -19,7 +21,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/BludgerMist16850?mibextid=V3Yony",
     LinkedIn: "https://www.linkedin.com/in/akshat-ansh-nayak-752480205",
-    Email: "akshatansh.nayak@gmail.com",
+    Email: "mailto:akshatansh.nayak@gmail.com",
     Phone: "+918597986876"
 },
 {
@@ -28,7 +30,7 @@ const Over = [
     Position: "N/A",
     Facebook: "https://www.facebook.com/vskusuma.ullasa?mibextid=ZbWKwL",
     LinkedIn: "https://www.linkedin.com/in/kusuma-ullasa",
-    Email: "kusumaullasa11@gmail.com",
+    Email: "mailto:kusumaullasa11@gmail.com",
     Phone: "+916305767377"
 }
 ];
@@ -46,9 +48,12 @@ function Logistics() {
 
     <div className={styles.over}>
   
-    <img src='./images/left.svg' alt='left' className={styles.left}/>
-    <img src='./images/right.svg' alt='left' className={styles.right}/>
-  
+    <Link to='/'>
+        <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
+        <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
     <div className={styles.mhead}>
           <center>Logistics</center>
         </div>

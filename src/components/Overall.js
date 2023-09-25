@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import styles from "./comp.module.css";
 import Rightbar from "./Rightbar";
+import { Link} from "react-router-dom";
 // import TeamData from './TeamData'
 
 const Over = [
@@ -11,7 +12,7 @@ const Over = [
     Position: "Overall Coordinator",
     Facebook: "https://www.facebook.com/profile.php?id=100056602879445",
     LinkedIn: "www.linkedin.com/in/rahul-k-r-30a687201",
-    Email: "krrahul.iitkgp@gmail.com",
+    Email: "mailto:krrahul.iitkgp@gmail.com",
     Phone: "+919642196970",
   }
 ];
@@ -28,8 +29,13 @@ function Overall() {
     </div>
 
       <div className={styles.over}>
+
+      <Link to='/'>
         <img src="./images/left.svg" alt="left" className={styles.left} />
+        </Link>
+        <Link to='/'>
         <img src="./images/right.svg" alt="left" className={styles.right} />
+        </Link>
 
         {/* <div className={styles.mhead}>
           <center>Overall Coordinator</center>

@@ -1,12 +1,12 @@
 .bar{
-    width: 27rem;
+    width: 30%;
     height: auto;
     position: fixed;
     top: 30%;
     border-right: #444341 1px solid;
 }
 .but2 {
-    width: 25rem;
+    width: 95%;
     height: 40px;
     color: #b6b6b6;
     background-color: #444341;
@@ -20,7 +20,7 @@
     cursor: pointer;
   }
   .butActive{
-    width: 25rem;
+    width: 95%;
     height: 40px;
     color: #e2e2e2;
     background-color: #E05E12;
