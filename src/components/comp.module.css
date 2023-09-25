@@ -1,0 +1,153 @@
+.over {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+.left {
+  float: left;
+  position: fixed;
+  width: auto;
+    height: auto;
+}
+.right {
+  float: right;
+  width: auto;
+    height: auto;
+}
+.card {
+  /* color: red; */
+  position: absolute;
+  top: 28%;
+  left: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 62rem;
+  place-content: center;
+}
+.pcard {
+  width: 30rem;
+  height: 26rem;
+}
+
+.ppic {
+  width: 62.5%;
+  height: auto;
+}
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  background: linear-gradient(
+    90deg,
+    #e05e12 -19.98%,
+    rgb(224 94 18 / 56%) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 24%;
+  margin: -29% 0 0 24%;
+  position: absolute;
+}
+.links {
+  display: flex;
+}
+
+.mail {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 3px 0px 3px 0px;
+  padding: 2px 8px 2px 8px;
+  border-right: 1px grey solid;
+}
+.li {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 3px 0px 3px 0px;
+  padding: 2px 8px 2px 8px;
+}
+.phone {
+  color: #b6b6b6;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.sbar {
+  /* position: fixed; */
+  display: block;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.mhead{
+    display: none;
+}
+@media screen and (max-width: 464px) {
+  .sbar {
+    display: none;
+  }
+
+  .card {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    place-content: center;
+  }
+  .pcard {
+    width: 100%;
+    height: 20rem;
+  }
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .left {
+    float: left;
+    position: static;
+    width: 7rem;
+    height: auto;
+  }
+  .right{
+    width: 9.5rem;
+    height: auto;
+  }
+  .name {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    background: linear-gradient(
+      90deg,
+      #e05e12 -19.98%,
+      rgba(224, 93, 18, 0.096) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 61%;
+    margin: -54% 0 0 41%;
+    position: absolute;
+  }
+  .mhead{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #c47b51;
+    /* position: absolute; */
+    /* left: 10%; */
+    padding: 30% 0 0 0;
+    /* z-index: 8; */
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+.bar{
+    width: 27rem;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    border-right: #444341 1px solid;
+}
+.but2 {
+    width: 25rem;
+    height: 40px;
+    color: #b6b6b6;
+    background-color: #444341;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  .butActive{
+    width: 25rem;
+    height: 40px;
+    color: #e2e2e2;
+    background-color: #E05E12;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    margin: 4px;
+    cursor: pointer;
+  }

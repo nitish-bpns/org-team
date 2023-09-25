@@ -1,0 +1,65 @@
+.rbar{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 464px) {
+    .rbar{
+        display: block;
+    position: absolute;
+    right: 4%;
+    top: 12%;
+    width: 1.5rem;
+    z-index: 5;
+    }
+    .rclose{
+        display: block;
+    position: absolute;
+    right: 4%;
+    top: 12%;
+    width: 1.2rem;
+    z-index: 5;
+    }
+    .bar{
+        width: 80%;
+    height: auto;
+    position: absolute;
+    top: 11%;
+    left: 20%;
+    background-color: #b6b6b6;
+    opacity: 0.9;
+    z-index: 2;
+    }
+    .but2 {
+        width: 98%;
+        height: 40px;
+        color: #b6b6b6;
+        background-color: #444341;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        margin: 0.5px;
+        cursor: pointer;
+        border: none;
+      }
+      .butActive {
+        width: 98%;
+        height: 40px;
+        color: #e2e2e2;
+        background-color: #E05E12;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        margin: 0.5px;
+        cursor: pointer;
+        border: none;
+      }
+}
