@@ -21,7 +21,7 @@
   left: 35%;
   display: flex;
   flex-wrap: wrap;
-  width: 68%;
+  width: 60%;
   place-content: center;
 }
 .pcard {
@@ -48,7 +48,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 24%;
-  margin: -29% 0 0 22%;
+  margin: -27% 0 0 24%;
   position: absolute;
 }
 .links {
@@ -88,6 +88,45 @@ body {
 .mhead{
     display: none;
 }
+
+
+
+@media screen and (max-width: 1500px){
+
+  .name {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    background: linear-gradient(
+      90deg,
+      #e05e12 -19.98%,
+      rgb(224 94 18 / 56%) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 24%;
+    margin: -29% 0 0 22%;
+    position: absolute;
+  }
+  .card {
+    /* color: red; */
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 68%;
+    place-content: center;
+  }
+
+}
+
+
+
+
 @media screen and (max-width: 464px) {
   .sbar {
     display: none;
