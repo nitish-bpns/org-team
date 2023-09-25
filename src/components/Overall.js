@@ -31,9 +31,9 @@ function Overall() {
         <img src="./images/left.svg" alt="left" className={styles.left} />
         <img src="./images/right.svg" alt="left" className={styles.right} />
 
-        <div className={styles.mhead}>
+        {/* <div className={styles.mhead}>
           <center>Overall Coordinator</center>
-        </div>
+        </div> */}
 
         <div className={styles.card}>
           {Over.map((member) => (
