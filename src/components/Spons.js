@@ -7,7 +7,7 @@ import { Link} from "react-router-dom";
 const Over = [
   {
     img: "./images/Rishi.jpg",
-    Name: "RISHI KUMAR",
+    Name: "Rishi Kumar",
     Position: "N/A",
     Facebook: "https://www.facebook.com/profile.php?id=100006118908643",
     LinkedIn: "https://www.linkedin.com/in/rishi-kumar-01a752221/",

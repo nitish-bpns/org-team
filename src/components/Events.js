@@ -25,7 +25,7 @@ const Over = [
   },
   {
     img: "./images/Nithish.jpg",
-    Name: "Burra Nitish",
+    Name: "Burra Nithish",
     Position: "Music Coordinator",
     Facebook: "https://www.facebook.com/nithish.nani.50?mibextid=9R9pXO",
     LinkedIn: "https://www.linkedin.com/in/burra-nithish-78279a230",
