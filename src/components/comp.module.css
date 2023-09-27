@@ -3,17 +3,30 @@
   height: 100vh;
   width: 100vw;
 }
-.left {
-  float: left;
-  position: fixed;
-  width: auto;
-    height: auto;
+
+* {
+  padding-top: 2px;
+  padding-left: 2px;
 }
+
+.banner {
+  display: none;
+}
+
+.left {
+  width: 8%;
+  float: left;
+  left: 2%;
+  position: fixed;
+  height: auto;
+}
+
 .right {
   float: right;
-  width: auto;
-    height: auto;
+  width: 11%;
+  height: auto;
 }
+
 .card {
   /* color: red; */
   position: absolute;
@@ -24,6 +37,7 @@
   width: 60%;
   place-content: center;
 }
+
 .pcard {
   width: 30rem;
   height: 26rem;
@@ -33,24 +47,33 @@
   width: 62.5%;
   height: auto;
 }
-.name {
+
+.name2 {
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 58px;
-  background: linear-gradient(
-    90deg,
-    #e05e12 -19.98%,
-    rgb(224 94 18 / 56%) 100%
-  );
+  font-weight: 900;
+  line-height: 70px;
+  background: linear-gradient(90deg,
+      #e05e12 -19.98%,
+      rgb(224 94 18 / 56%) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 24%;
-  margin: -26% 0 0 22%;
+  margin: -29% 0 0 22%;
+  padding: 2%;
   position: absolute;
 }
+
+.name {
+  width: 150px;
+  /* object-fit: contain; */
+  position: absolute;
+  left: 50%;
+  top: 10%
+}
+
 .links {
   display: flex;
 }
@@ -62,12 +85,14 @@
   padding: 2px 8px 2px 8px;
   border-right: 1px grey solid;
 }
+
 .li {
   height: 1.8rem;
   width: 1.8rem;
   margin: 3px 0px 3px 0px;
   padding: 2px 8px 2px 8px;
 }
+
 .phone {
   color: #b6b6b6;
   font-family: "Poppins", sans-serif;
@@ -77,40 +102,51 @@
   line-height: normal;
   letter-spacing: 0.5px;
 }
+
 .sbar {
   /* position: fixed; */
   display: block;
 }
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-.mhead{
-    display: none;
+
+.mhead {
+  display: none;
 }
 
 
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1500px) {
 
-  .name {
+  .name2 {
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900px;
     line-height: 58px;
-    background: linear-gradient(
-      90deg,
-      #e05e12 -19.98%,
-      rgb(224 94 18 / 56%) 100%
-    );
+    background: linear-gradient(70deg,
+        #e05e12 -19.98%,
+        rgb(224 94 18 / 56%) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 24%;
-    margin: -29% 0 0 22%;
+    margin: -35% 0 0 22%;
+    padding: 7%;
     position: absolute;
   }
+
+  .name {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+  }
+
+
   .card {
     /* color: red; */
     position: absolute;
@@ -132,6 +168,13 @@ body {
     display: none;
   }
 
+  .banner {
+    display: flex;
+    position: fixed;
+    padding-top: 22%;
+    right: 62%;
+  }
+
   .card {
     position: absolute;
     top: 22%;
@@ -141,43 +184,56 @@ body {
     width: 90%;
     place-content: center;
   }
+
   .pcard {
     width: 100%;
     height: 20rem;
   }
+
   body {
     max-width: 100vw;
     overflow-x: hidden;
   }
+
   .left {
     float: left;
     position: static;
-    width: 7rem;
+    width: 5rem;
     height: auto;
   }
-  .right{
-    width: 9.5rem;
+
+  .right {
+    width: 6.5rem;
     height: auto;
   }
-  .name {
+
+  .name2 {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
-    background: linear-gradient(
-      90deg,
-      #e05e12 -19.98%,
-      rgba(224, 93, 18, 0.096) 100%
-    );
+    background: linear-gradient(90deg,
+        #e05e12 -19.98%,
+        rgba(224, 93, 18, 0.096) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 61%;
     margin: -54% 0 0 41%;
+    padding: 2%;
     position: absolute;
   }
-  .mhead{
+
+  .name {
+    width: 150px;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 20%
+  }
+
+  .mhead {
     display: block;
     font-size: 32px;
     font-weight: 600;

@@ -2,11 +2,11 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import styles from "./comp.module.css";
 import Rightbar from "./Rightbar";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Over = [
   {
-    img: "./images/Aryan.jpg",
+    img: "./images/Team/Aryan.png",
     Name: "Rane Aryan Pannalal",
     Position: "Dance + Lifestyle Coordinator",
     Facebook: "https://m.facebook.com/profile.php/?id=100006483914831",
@@ -15,7 +15,7 @@ const Over = [
     Phone: "+919112817950",
   },
   {
-    img: "./images/Zaid.jpg",
+    img: "./images/Team/Zaid.png",
     Name: "Md Zaid Alam",
     Position: "Dramatics Coordinator",
     Facebook: "https://www.facebook.com/Mallickzaid7",
@@ -24,7 +24,7 @@ const Over = [
     Phone: "+919508551256",
   },
   {
-    img: "./images/Nithish.jpg",
+    img: "./images/Team/burra.png",
     Name: "Burra Nithish",
     Position: "Music Coordinator",
     Facebook: "https://www.facebook.com/nithish.nani.50?mibextid=9R9pXO",
@@ -33,7 +33,7 @@ const Over = [
     Phone: "+919885989222",
   },
   {
-    img: "./images/Soni.jpg",
+    img: "./images/Team/jai.png",
     Name: "Jai Kumar Soni",
     Position: "Fine Arts Coordinator",
     Facebook:
@@ -43,7 +43,7 @@ const Over = [
     Phone: "+919001927934",
   },
   {
-    img: "./images/Sanchay.jpg",
+    img: "./images/Team/Sanchay.png",
     Name: "Sanchay Mahato",
     Position: "Quiz Coordinator",
     Facebook: "https://www.facebook.com/heavymetal17/",
@@ -52,7 +52,7 @@ const Over = [
     Phone: "+919479087949",
   },
   {
-    img: "./images/Harish.jpg",
+    img: "./images/Team/harishwar.png",
     Name: "Harishwar",
     Position: "Film + Photography Coordinator",
     Facebook: "https://www.facebook.com/Harishwar.Adithya.S?mibextid=ZbWKwL",
@@ -75,21 +75,21 @@ function Events() {
 
       <div className={styles.over}>
         <Link to='/'>
-        <img src="./images/left.svg" alt="left" className={styles.left} />
+          <img src="./images/left.svg" alt="left" className={styles.left} />
         </Link>
         <Link to='/'>
-        <img src="./images/right.svg" alt="left" className={styles.right} />
+          <img src="./images/right.svg" alt="left" className={styles.right} />
         </Link>
-
-        <div className={styles.mhead}>
+        <img src="./images/EVENTS.png" className={styles.banner} alt="" />
+        {/* <div className={styles.mhead}>
           <center>Events</center>
-        </div>
+        </div> */}
 
         <div className={styles.card}>
           {Over.map((member) => (
             <div className={styles.pcard}>
               <img src={member.img} alt="pic" className={styles.ppic} />
-              <div className={styles.name}>{member.Name}</div>
+              <div className={styles.name2}>{member.Name}</div>
 
               <div className={styles.links}>
                 <div className={styles.link1}>

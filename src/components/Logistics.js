@@ -2,67 +2,68 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import styles from './comp.module.css'
 import Rightbar from './Rightbar';
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Over = [
   {
-    img: "./images/Ishan.jpg",
+    img: "./images/Team/ishan.png",
     Name: "Ishan Nargolkar",
     Position: "N/A",
     Facebook: "https://www.facebook.com/ishan.nargolkar.3",
     LinkedIn: "www.linkedin.com/in/ishan-nargolkar",
     Email: "mailto:ishan.nargolkar@gmail.com",
     Phone: "+917261970250"
-},
-{
-    img: "./images/Akshat.jpg",
+  },
+  {
+    img: "./images/Team/akshat.png",
     Name: "Akshat Ansh Nayak",
     Position: "N/A",
     Facebook: "https://www.facebook.com/BludgerMist16850?mibextid=V3Yony",
     LinkedIn: "https://www.linkedin.com/in/akshat-ansh-nayak-752480205",
     Email: "mailto:akshatansh.nayak@gmail.com",
     Phone: "+918597986876"
-},
-{
-    img: "./images/Kusuma.jpg",
+  },
+  {
+    img: "./images/Team/kusuma.png",
     Name: "Kusuma Ullasa",
     Position: "N/A",
     Facebook: "https://www.facebook.com/vskusuma.ullasa?mibextid=ZbWKwL",
     LinkedIn: "https://www.linkedin.com/in/kusuma-ullasa",
     Email: "mailto:kusumaullasa11@gmail.com",
     Phone: "+916305767377"
-}
+  }
 ];
 
 function Logistics() {
   return (
     <>
-    <div className={styles.sbar} >
-    <Sidebar />
-    </div>
+      <div className={styles.sbar} >
+        <Sidebar />
+      </div>
 
-    <div className={styles.rbar} >
-    <Rightbar/>
-    </div>
+      <div className={styles.rbar} >
+        <Rightbar />
+      </div>
 
-    <div className={styles.over}>
-  
-    <Link to='/'>
-        <img src="./images/left.svg" alt="left" className={styles.left} />
+      <div className={styles.over}>
+
+        <Link to='/'>
+          <img src="./images/left.svg" alt="left" className={styles.left} />
         </Link>
         <Link to='/'>
-        <img src="./images/right.svg" alt="left" className={styles.right} />
+          <img src="./images/right.svg" alt="left" className={styles.right} />
         </Link>
-    <div className={styles.mhead}>
+        <img src="./images/LOGISTICS.png" className={styles.banner} alt="" />
+        {/* <div className={styles.mhead}>
           <center>Logistics</center>
-        </div>
+        </div> */}
 
-    <div className={styles.card}>
+        <div className={styles.card}>
           {Over.map((member) => (
             <div className={styles.pcard}>
               <img src={member.img} alt="pic" className={styles.ppic} />
-              <div className={styles.name}>{member.Name}</div>
+              <div className={styles.name2}>{member.Name}</div>
 
 
 
@@ -97,9 +98,9 @@ function Logistics() {
             </div>
           ))}
         </div>
-  
-    </div>
-     </>
+
+      </div>
+    </>
   )
 }
 

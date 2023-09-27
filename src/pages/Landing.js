@@ -14,7 +14,7 @@ function Landing() {
 
       <center>
         <Link to='./overall'>
-        <button className={styles.but1}>Overall Coordinator</button>
+          <button className={styles.but1}>Overall Coordinator</button>
         </Link>
       </center>
 

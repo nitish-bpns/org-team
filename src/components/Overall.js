@@ -2,13 +2,12 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import styles from "./comp.module.css";
 import Rightbar from "./Rightbar";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 // import TeamData from './TeamData'
 
 const Over = [
   {
-    img: "./images/Rahul.jpeg",
-    Name: "K.R.Rahul",
+    img: "./images/Team/rahul.png",
     Position: "Overall Coordinator",
     Facebook: "https://www.facebook.com/profile.php?id=100056602879445",
     LinkedIn: "www.linkedin.com/in/rahul-k-r-30a687201",
@@ -20,23 +19,24 @@ const Over = [
 function Overall() {
   return (
     <>
-      <div className={styles.sbar} >
-    <Sidebar />
-    </div>
 
-    <div className={styles.rbar} >
-    <Rightbar/>
-    </div>
+      <div className={styles.sbar} >
+        <Sidebar />
+      </div>
+
+      <div className={styles.rbar} >
+        <Rightbar />
+      </div>
 
       <div className={styles.over}>
 
-      <Link to='/'>
-        <img src="./images/left.svg" alt="left" className={styles.left} />
+        <Link to='/'>
+          <img src="./images/left.svg" alt="left" className={styles.left} />
         </Link>
         <Link to='/'>
-        <img src="./images/right.svg" alt="left" className={styles.right} />
+          <img src="./images/right.svg" alt="left" className={styles.right} />
         </Link>
-
+        <img src="./images/OVERALL.png" className={styles.banner} alt="" />
         {/* <div className={styles.mhead}>
           <center>Overall Coordinator</center>
         </div> */}
@@ -45,7 +45,8 @@ function Overall() {
           {Over.map((member) => (
             <div className={styles.pcard}>
               <img src={member.img} alt="pic" className={styles.ppic} />
-              <div className={styles.name}>{member.Name}</div>
+              <div className={styles.name2} >K.R.Rahul</div>
+              {/* <img src="./images/KRahul.png" className={styles.name} alt="" /> */}
 
 
 
