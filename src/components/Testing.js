@@ -1,5 +1,3 @@
-// import logo from './logo.png';
-import "./App.css";
 import React, { useState } from "react";
 import QrReader from "react-web-qr-reader";
 
