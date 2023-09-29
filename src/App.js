@@ -8,6 +8,7 @@ import Spons from './components/Spons';
 import Media from './components/Media';
 import Outreach from './components/Outreach';
 import Events from './components/Events';
+import Testing from './components/Testing';
 
 function App() {
   return <>
@@ -20,7 +21,8 @@ function App() {
       <Route path="/tech" element={<Tech/>} /> 
       <Route path="/spons" element={<Spons/>} /> 
       <Route path="/media" element={<Media/>} /> 
-      <Route path="/outreach" element={<Outreach/>} /> 
+      <Route path="/outreach" element={<Outreach/>} />
+      <Route path="/testingforqr" element={<Testing/>} />  
     </Routes>
   </>;
 }
